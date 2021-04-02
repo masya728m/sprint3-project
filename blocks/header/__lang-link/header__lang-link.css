@@ -1,18 +1,32 @@
 .header__lang-link {
-    margin: 0;
-    padding: 0;
-    margin-top: 18px;
-    margin-bottom: 6px;
-    display: inline-block;
-    margin-right: 18px;
-    color: white;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    font-family: Inter;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 18px;
+  color: white;
+  font-weight: 400;
+  font-family: Inter;
 }
 
 .header__lang-link:last-of-type {
-    margin-right: 0;
-    text-decoration: none;
+  margin-right: 0;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 425px) {
+  .header__lang-link {
+    margin-top: 18px;
+    margin-bottom: 6px;
+    line-height: 28px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__lang-link {
+    margin-top: 14px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 20px;
+  }
 }

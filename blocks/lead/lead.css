@@ -1,6 +1,24 @@
 .lead {
-    vertical-align: top;
-    margin-left: 148px;
-    margin-right: 148px;
-    margin-top: 56px;
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+}
+
+@media screen and (min-width: 1024px) {
+  .lead {
+    width: calc(984 / 1280 * 100%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    max-width: calc(928 / 1024 * 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    width: 100%;
+  }
 }
